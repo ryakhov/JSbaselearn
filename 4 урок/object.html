@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Объекты</title>
+	</head>
+	<body>
+		<script>
+			var number = prompt("Введите число от 0 до 999");
+			var objnum = {};
+			var sipnumber = number.split('');
+			
+			objnum['сотни'] = +sipnumber[0];
+			objnum['десятки'] = +sipnumber[1];
+			objnum['единицы'] = +sipnumber[2];
+							
+			if (sipnumber.length == 3) {
+			console.log(objnum);
+			}
+			else if (sipnumber.length == 2) {
+			delete objnum.сотни
+			objnum['десятки'] = +sipnumber[0];
+			objnum['единицы'] = +sipnumber[1];
+			console.log(objnum);
+			}
+			else if (sipnumber.length == 1) {
+			delete objnum.сотни
+			delete objnum.десятки
+			objnum['единицы'] = +sipnumber[0];
+			console.log(objnum);
+			}
+			
+			else {
+			delete objnum.сотни
+			delete objnum.десятки
+			delete objnum.единицы
+			console.log('Вы ввели недопустимое значение');
+			console.log(objnum);
+			}
+			
+		</script>
+	</body>
+</html>
+
