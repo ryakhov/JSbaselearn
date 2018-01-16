@@ -1,0 +1,54 @@
+<!doctype html> 
+<html ​l​ang​="​en"> 
+<head> 
+​	<meta ​c​harset​="​utf-8"> 
+​	<title> ​Basket ​</title> 
+​	<link ​r​el​="​stylesheet" ​​href​="​css/style.css" ​/​> 
+​<script>
+	 
+	var d = document;  
+	//var	basket = getElementById('basket');
+	var	basketData = {};
+	//var	itemId = this.getAttribute('id'); // ID товара
+	var	itemBox = d.querySelectorAll('.cat');
+	//consol.log(basket);
+	//consol.log(basketData);
+	//consol.log(itemId);
+	//consol.log(itemBox);
+	
+	function fff (){
+		var cartData = {},
+		parentBox = this.childNode,
+		itemTitle = parentBox.querySelector('.headItem').innerHTML; // название товара
+		itemPrice = parentBox.querySelector('.price').innerHTML; // стоимость товара
+		}
+	consol.log('');
+	//function ​init(){
+	//function addToBask (transportData) {
+		
+		//}
+
+	//} 
+	//window.onload ​= ​init; //1 шаг - от сюда стартует скрипт, вызвано событием окончания загрузки страницы 
+</script> 
+</head> 
+<body> 
+<!-- Корзина -->
+<div id="basket">
+
+</div>
+<!-- Список товаров -->
+<div class="items">
+<div id="item1" class="cat"><br><span class="headItem">товар 1</span><br><span class="price">255$</span></div><br>
+	<button>В корзину</button>
+<div id="item2"><br>товар 2<br>255$</div><br>
+	<button>В корзину</button>
+<div id="item3"><br>товар 3<br>255$</div><br>
+	<button>В корзину</button>
+<div id="item3"><br>товар 4<br>255$</div><br>
+	<button>В корзину</button>
+</div>
+</body> 
+</html> 
+
+
